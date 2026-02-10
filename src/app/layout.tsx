@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-// import { fontName } from '@/app/fonts';
+import { pretendard } from '@/app/fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,8 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      {/* <body className={fontName.className}> */}
-      <body>{children}</body>
+      <body className={pretendard.className}>{children}</body>
     </html>
   );
 }
